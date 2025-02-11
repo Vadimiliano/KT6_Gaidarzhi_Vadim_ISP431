@@ -48,6 +48,7 @@ namespace PetShop.Pages
 
                 if(Data.TradeEntities.GetContext().User.Any(d => d.UserLogin == UserLoginTextBox.Text && d.UserPassword == UserPasswordTextBox.Password))
                 {
+                   
                     MessageBox.Show("Успех!", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
                     Classes.Manager.MainFrame.Navigate(new Pages.ProductPage());
                 }

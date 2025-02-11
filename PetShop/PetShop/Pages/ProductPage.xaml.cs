@@ -23,6 +23,10 @@ namespace PetShop.Pages
         public ProductPage()
         {
             InitializeComponent();
+            ProductListView.ItemsSource = Data.TradeEntities.GetContext().Product.ToList();
+            ManufacturerComboBox.ItemsSource = Data.TradeEntities.GetContext().Manufacturer.ToList();
         }
+
+         
     }
 }
