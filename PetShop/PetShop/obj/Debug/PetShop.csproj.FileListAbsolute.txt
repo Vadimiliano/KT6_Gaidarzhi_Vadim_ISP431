@@ -25,3 +25,5 @@ C:\Users\comcuru\Desktop\KT6_Gaidarzhi_Vadim_ISP431\PetShop\PetShop\obj\Debug\Pe
 C:\Users\comcuru\Desktop\KT6_Gaidarzhi_Vadim_ISP431\PetShop\PetShop\obj\Debug\PetShop.exe
 C:\Users\comcuru\Desktop\KT6_Gaidarzhi_Vadim_ISP431\PetShop\PetShop\obj\Debug\PetShop.pdb
 C:\Users\comcuru\Desktop\KT6_Gaidarzhi_Vadim_ISP431\PetShop\PetShop\obj\Debug\App.baml
+C:\Users\comcuru\Desktop\KT6_Gaidarzhi_Vadim_ISP431\PetShop\PetShop\obj\Debug\Pages\AddProductPage.g.cs
+C:\Users\comcuru\Desktop\KT6_Gaidarzhi_Vadim_ISP431\PetShop\PetShop\obj\Debug\Pages\AddProductPage.baml

@@ -49,6 +49,11 @@
                   Width="200"
                   Margin="620,0,0,0"
                   DisplayMemberPath="Name"></ComboBox>
+
+        <Label Content="30/30" 
+               VerticalAlignment="Center"
+               HorizontalAlignment="Right"
+               Margin="0,0,20,0"></Label>
         
         
      
@@ -84,5 +89,21 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+        <Button x:Name="GoBackButton" 
+                Grid.Row="2"
+                Click="GoBackButton_Click"
+                Content="Назад" VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="20,0,0,0"
+                Height="30"></Button>
+        
+        <Button x:Name="AddProductButton" 
+                Grid.Row="2"
+                Click="AddProductButton_Click"
+                Content="Добавить" VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="0,0,20,0"
+                Height="30"></Button>
     </Grid>
 </Page>

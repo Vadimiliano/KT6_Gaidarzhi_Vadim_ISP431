@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:PetShop"
         mc:Ignorable="d"
         Title="ООО «Товары для животных»" Height="800" Width="1200"
+        MinHeight="800" MinWidth="1200"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>

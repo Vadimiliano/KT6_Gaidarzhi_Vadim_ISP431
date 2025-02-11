@@ -16,25 +16,18 @@ using System.Windows.Shapes;
 namespace PetShop.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ProductPage.xaml
+    /// Логика взаимодействия для AddProductPage.xaml
     /// </summary>
-    public partial class ProductPage : Page
+    public partial class AddProductPage : Page
     {
-        public ProductPage()
+        public AddProductPage()
         {
             InitializeComponent();
-            ProductListView.ItemsSource = Data.TradeEntities.GetContext().Product.ToList();
-            ManufacturerComboBox.ItemsSource = Data.TradeEntities.GetContext().Manufacturer.ToList();
         }
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
-            Classes.Manager.MainFrame.Navigate(new Pages.LoginPage());
-        }
-
-        private void AddProductButton_Click(object sender, RoutedEventArgs e)
-        {
-            Classes.Manager.MainFrame.Navigate(new Pages.AddProductPage());
+            Classes.Manager.MainFrame.Navigate(new Pages.ProductPage());
 
         }
     }

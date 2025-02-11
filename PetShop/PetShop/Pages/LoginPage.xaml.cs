@@ -48,9 +48,29 @@ namespace PetShop.Pages
 
                 if(Data.TradeEntities.GetContext().User.Any(d => d.UserLogin == UserLoginTextBox.Text && d.UserPassword == UserPasswordTextBox.Password))
                 {
-                   
+
+                    var user = Data.TradeEntities.GetContext().User
+                        .Where(d => d.UserLogin == UserLoginTextBox.Text &&
+                        d.UserPassword == UserPasswordTextBox.Password).FirstOrDefault();
+
                     MessageBox.Show("Успех!", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
-                    Classes.Manager.MainFrame.Navigate(new Pages.ProductPage());
+
+                    switch (user.Role.RoleName)
+                    {
+                        case "Администратор":
+                            Classes.Manager.MainFrame.Navigate(new Pages.ProductPage());
+                            break;
+                        case "Клиент":
+                            Classes.Manager.MainFrame.Navigate(new Pages.ProductPage());
+                            break;
+                        case "Менеджер":
+                            Classes.Manager.MainFrame.Navigate(new Pages.ProductPage());
+                            break;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Логин или пароль не верны!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
 
 
